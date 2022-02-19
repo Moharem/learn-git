@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  /* ### Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --gray: #7e7e7e;
+}
+html {
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background: var(--Very-dark-blue-mainBG);
+  height: 100vh;
+}
+.main-card {
+  width: 320px;
+  height: 490px;
+  background: var(--Very-dark-blue-cardBG);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 20px;
+}
+.img-container {
+  width: 100%;
+  height: 260px;
+  /* border: 2px solid black; */
+  border-radius: 14px;
+  overflow: hidden;
+}
+.img-container {
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+}
+.myHover {
+  width: 100%;
+  height: 100%;
+  background: var(--Cyan);
+  opacity: 0;
+}
+.fa-eye {
+  position: absolute;
+  top: 28%;
+  left: 45%;
+  color: white;
+  opacity: 0;
+}
+.img-container:hover .myHover {
+  opacity: 0.3;
+}
+.img-container:hover .fa-eye {
+  opacity: 1;
+}
+.desc h1 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+  color: var(--White);
+}
+h1:hover {
+  color: var(--Cyan);
+}
+.desc p {
+  font-size: 15px;
+  color: var(--gray);
+  margin-bottom: 16px;
+}
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  border-bottom: 1px solid #8080804f;
+  padding: 0px 0 14px;
+}
+.first {
+  font-weight: 600;
+  color: var(--Cyan);
+}
+.fa-ethereum {
+  padding-right: 4px;
+  font-size: 13px;
+}
+.second {
+  color: var(--gray);
+}
+.fa-clock {
+  font-size: 11px;
+  padding-right: 4px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0;
+}
+.footer img {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+.footer p {
+  font-size: 15px;
+  color: var(--gray);
+  margin-top: 5px;
+}
+.footer p a {
+  color: var(--White);
+  text-decoration: none;
+}
+.footer p a:hover {
+  color: var(--Cyan);
+}
