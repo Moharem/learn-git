@@ -59,7 +59,7 @@ body {
   opacity: 0;
 }
 .img-container:hover .myHover {
-  opacity: 0.3;
+  opacity: 0.35;
 }
 .img-container:hover .fa-eye {
   opacity: 1;
